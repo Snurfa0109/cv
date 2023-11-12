@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         pengalaman_kerja = ?, 
         keterampilan = ?, 
         foto_path = ? 
-        WHERE id = 12415"; // Sesuaikan dengan id CV 
+        WHERE id = 2"; // Sesuaikan dengan id CV 
 
   $stmt = mysqli_prepare($conn, $query);
   mysqli_stmt_bind_param($stmt, "sssssssss", $nama, $alamat, $telepon, $email, $web, $pendidikan, $pengalaman_kerja, $keterampilan, $foto_path);
